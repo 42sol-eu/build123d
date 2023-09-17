@@ -1,10 +1,17 @@
 # Readme: #folder examples
 
-## low poly benchy
-
 ## benchy
+by:   Gumyr
+date: July 9, 202
+
+This example imports a STL model as a solid object and changes it.
+The low-poly-benchy used in this example is by reddaugherty.
+       
+link: https://www.printables.com/model/151134-low-poly-benchy.
 
 ## boxes on a face (build + algebra)
+
+https://build123d.readthedocs.io/en/latest chapter key concepts / workplanes
 
 ## build123d-customizable-logo (build + algebra)
 
@@ -36,6 +43,13 @@
 
 ## loft (build + algebra)
 
+This example demonstrates lofting a set of sketches, selecting the top and bottom by type, and shelling.
+
+
+### loft (docs example)
+
+
+
 ## mixed algebra context
 
 ## multiple workplanes (build + algebra)
@@ -52,7 +66,17 @@
 
 ## shamrock
 
+Adds a four leaf clover implemented as a `BaseSketchObject`.
+
+![[shamrock.pmg]]
+
+
 ## tea cup (build + algebra)
+
+### tea cup from docs 
+
+https://build123d.readthedocs.io/en/latest chapter overview
+
 
 ## ttt sm hanger
 
