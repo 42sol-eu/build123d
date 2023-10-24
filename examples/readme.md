@@ -19,6 +19,15 @@ https://build123d.readthedocs.io/en/latest chapter key concepts / workplanes
 
 ## canadian flag (build + algebra)
 
+## controller
+
+url: https://build123d.readthedocs.io/en/latest/build_sketch.html#sketching-on-other-planes
+
+Sketching on a turned plane.
+
+![[controller.py]]
+
+
 ## curcuit board (build + algebra)
 
 ## custom sketch objects (build + algebra)
@@ -41,6 +50,10 @@ https://build123d.readthedocs.io/en/latest chapter key concepts / workplanes
 
 ## lego / brick (build + algebra)
 
+todo: add svgs
+
+This example creates a model of a double wide lego block with a parametric length (pip_count).
+
 ## loft (build + algebra)
 
 This example demonstrates lofting a set of sketches, selecting the top and bottom by type, and shelling.
@@ -53,6 +66,16 @@ This example demonstrates lofting a set of sketches, selecting the top and botto
 ## mixed algebra context
 
 ## multiple workplanes (build + algebra)
+
+
+## OCC bottle (build + algebra)
+
+![[occ_bottle.svg]]
+
+![[occ_bottle.py]]
+
+![[occ_bottle_algebra.py]]
+
 
 ## pegboard j hook (build + algebra)
 
