@@ -5,6 +5,8 @@ by:   Gumyr
 date: March 6th 2023
 
 desc: Demo adding features to multiple faces in one operation.
+ref:  
+  [Workplanes](https://build123d.readthedocs.io/en/latest/key_concepts.html#Workplanes)
 
 license:
 
@@ -24,6 +26,7 @@ license:
 
 """
 import build123d as bd
+from ocp_vscode import *
 
 with bd.BuildPart() as bp:
     bd.Box(3, 3, 3)

@@ -8,6 +8,13 @@ desc:
 
     This example creates the build123d customizable logo.
 
+reference:
+
+    [Text](https://build123d.readthedocs.io/en/latest/objects.html#objects_sketch.Text)
+    [Builders](https://build123d.readthedocs.io/en/latest/builders.html)
+    [Compound](https://build123d.readthedocs.io/en/latest/assemblies.html)
+    [Export SVG](https://build123d.readthedocs.io/en/latest/import_export.html#svg)
+
 license:
 
     Copyright 2022 Gumyr
@@ -100,9 +107,12 @@ exporter = ExportSVG(scale=100 / max_dimension)
 exporter.add_shape(visible)
 exporter.write(f"cmpd.svg")
 
-show_object(cmpd, name="compound")
-# show_object(one.line.wrapped, name="one")
-# show_object(two.sketch.wrapped, name="two")
-# show_object(three_d.part.wrapped, name="three_d")
-# show_object(extension_lines.line.wrapped, name="extension_lines")
-# show_object(build.sketch.wrapped, name="build")
+show_compound = False
+if show_compound:
+    show_object(cmpd, name="compound")
+else:
+    show_object(one.line.wrapped, name="one",colors=[(0x00,0x00,0xFF),])
+    #show_object(two.sketch.wrapped, name="two")
+    #show_object(three_d.part.wrapped, name="three_d")
+    #show_object(extension_lines.line.wrapped, name="extension_lines")
+    #show_object(build.sketch.wrapped, name="build")

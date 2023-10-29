@@ -8,6 +8,13 @@ desc:
 
     This example creates the build123d logo.
 
+reference:
+
+    [Text](https://build123d.readthedocs.io/en/latest/objects.html#objects_sketch.Text)
+    [Builders](https://build123d.readthedocs.io/en/latest/builders.html)
+    [Compound](https://build123d.readthedocs.io/en/latest/assemblies.html)
+    [Export SVG](https://build123d.readthedocs.io/en/latest/import_export.html#svg)
+
 license:
 
     Copyright 2022 Gumyr

@@ -7,9 +7,14 @@ date: July 9, 2023
 
 desc:
     This example imports a STL model as a Solid object and changes it.
-    The low-poly-benchy used in this example is by reddaugherty, see
-    https://www.printables.com/model/151134-low-poly-benchy.
+    The [low-poly-benchy](./assets/bench_low_poly.stl) used in this example 
+    is designed by [reddaugherty](https://www.printables.com/model/151134-low-poly-benchy).
 
+ref: 
+    [Import STL](https://build123d.readthedocs.io/en/latest/direct_api_reference.html#import-export)
+    [Workplanes](https://build123d.readthedocs.io/en/latest/key_concepts.html#Workplanes)
+    
+    
 license:
 
     Copyright 2023 Gumyr
@@ -32,7 +37,7 @@ from ocp_vscode import *
 
 with BuildPart() as benchy:
     # Import the benchy as a Solid model and add it
-    add(import_stl("low_poly_benchy.stl", for_reference=False))
+    add(import_stl("./assets/benchy_low_poly.stl", for_reference=False))
 
     # Determine the plane that defines the top of the roof
     vertices = benchy.vertices()
