@@ -95,3 +95,42 @@ location in memory, as follows:
     plane=Plane(o=(0.00, 0.00, 1.00), x=(1.00, 0.00, 0.00), z=(0.00, 0.00, 1.00))
 
 which shows the origin, x direction, and z direction of the plane.
+
+This can be easily extended with any library of your choosing.  For example, [rich](rich.readthedocs.io) 
+
+An example with `rich`:
+
+.. code-block:: python
+    from rich import print 
+    from rich.pretty import Pretty
+    from rich.panel import Panel
+
+    plane = Plane.XY.offset(1)
+    print(f"{plane=}") # locals is provided by rich
+
+    pretty = Pretty(locals())
+    panel = Panel(pretty)
+    print(panel)
+
+The output is:
+
+.. code-block:: bash
+
+plane=Plane(o=(0.00, 0.00, 1.00), x=(1.00, 0.00, 0.00), z=(0.00, 0.00, 1.00))
+╭────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│ {                                                                                                                                                                          │
+│     '__name__': '__main__',                                                                                                                                                │
+│     '__doc__': None,                                                                                                                                                       │
+│     '__package__': None,                                                                                                                                                   │
+│     '__loader__': <_frozen_importlib_external.SourceFileLoader object at 0x100b29180>,                                                                                     │
+│     '__spec__': None,                                                                                                                                                      │
+│     '__annotations__': {},                                                                                                                                                 │
+│     '__builtins__': <module 'builtins' (built-in)>,                                                                                                                        │
+|                                                                                                                                                                            │
+| ... trunchated ...                                                                                                                                                         │
+|                                                                                                                                                                            │
+│     'pretty': <rich.pretty.Pretty object at 0x15fdb7580>,                                                                                                                  │
+│     'panel': <rich.panel.Panel object at 0x15fdb7ee0>                                                                                                                      │
+│ }                                                                                                                                                                          │
+╰────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+
